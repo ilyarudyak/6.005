@@ -1,5 +1,7 @@
 package piwords;
 
+import java.util.*;
+
 public class AlphabetGenerator {
     /**
      * Given a numeric base, return a char[] that maps every digit that is
@@ -50,9 +52,131 @@ public class AlphabetGenerator {
      * @return A char[] that maps every digit of the base to a char that the
      *         digit should be translated into.
      */
+
+    private static Map<Character, Integer> frequency = new HashMap<>();
+    private static Map<Character, Double> pdf = new HashMap<>();
+    private static Map<Character, Double> cdf = new HashMap<>();
+    public static List<Character> alphabet = new ArrayList<>();
+    private static Map<Character, Integer> limits = new HashMap<>();
+    private static int letterCount;
+
     public static char[] generateFrequencyAlphabet(int base,
                                                    String[] trainingData) {
-        // TODO: Implement (Problem 5.b)
-        return null;
+        countLetters(trainingData);
+        pdfCalc();
+        cdfCalc();
+
+        return generateOutput(base);
+    }
+
+    public static void clear() {
+        frequency = new HashMap<>();
+        pdf = new HashMap<>();
+        cdf = new HashMap<>();
+        alphabet = new ArrayList<>();
+        limits = new HashMap<>();
+        letterCount = 0;
+    }
+
+    private static char[] generateOutput(int base) {
+
+        limitsCals(base);
+
+        char[] output = new char[base];
+        int low = 0;
+        int high;
+        for(Character letter: alphabet) {
+
+            high = limits.get(letter);
+            for (int i=low; i<high; i++)
+                output[i] = letter;
+
+            low = high;
+        }
+        return output;
+    }
+
+    private static void limitsCals(int base) {
+
+        for (Character letter: cdf.keySet())
+            limits.put(letter, (int) Math.round(cdf.get(letter) * base));
+    }
+
+    // calculate pdf
+    private static void pdfCalc() {
+
+        for(Character letter: alphabet) {
+            pdf.put(letter, (double) frequency.get(letter) / letterCount);
+        }
+    }
+
+    // calculate cdf
+    private static void cdfCalc() {
+
+        double counter = 0;
+        for (Character letter: alphabet) {
+            counter += pdf.get(letter);
+            cdf.put(letter, counter);
+        }
+    }
+
+    // count letters in trainingData
+    private static void countLetters(String[] trainingData) {
+
+        for (String word: trainingData)
+            countLettersInWord(word);
+
+        // fill in alphabet
+        alphabet.addAll(frequency.keySet());
+        Collections.sort(alphabet);
+    }
+
+    private static void countLettersInWord(String word) {
+
+        for (Character letter: word.toCharArray()) {
+
+            if (Character.isLowerCase(letter)) {
+                if (frequency.containsKey(letter))
+                    frequency.put(letter, frequency.get(letter) + 1);
+                else frequency.put(letter, 1);
+                letterCount++;
+            }
+
+        }
+    }
+
+    public static void main(String[] args) {
+
+        String[] trainingData = new String[3];
+        String s = "";
+        for(int i=0; i<302; i++) { s += "a"; } trainingData[0] = s; s = "";
+        for(int i=302; i<802; i++) { s += "b"; } trainingData[1] = s; s = "";
+        for(int i=802; i<1000; i++) { s += "c"; } trainingData[2] = s;
+
+        char[] expectedOutput = new char[93];
+        for(int i=0; i<28; i++) { expectedOutput[i] = 'a'; }
+        for(int i=28; i<75; i++) { expectedOutput[i] = 'b'; }
+        for(int i=75; i<93; i++) { expectedOutput[i] = 'c'; }
+
+//        System.out.println(Arrays.toString(
+//                generateFrequencyAlphabet(93,trainingData)));
+
+        char[] output = generateFrequencyAlphabet(93, trainingData);
+        System.out.println(Arrays.toString(output));
+        System.out.println(Arrays.toString(expectedOutput));
+        System.out.println(Arrays.equals(expectedOutput, output));
+
+        System.out.println("frequency=" + frequency);
+        System.out.println("alphabet=" + alphabet);
+        System.out.println("letterCount=" + letterCount);
+        System.out.println("pdf=" + pdf);
+        System.out.println("cdf=" + cdf);
+        System.out.println("limits=" + limits);
+
+        String s0 = "aaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+        String s1 = "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb";
+        String s2 = "cccccccccccccccccc";
+
+        System.out.println("s0="+s0.length()+" s1="+s1.length()+" s2="+s2.length());
     }
 }

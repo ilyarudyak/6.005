@@ -1,5 +1,7 @@
 package piwords;
 
+import java.math.BigDecimal;
+
 public class BaseTranslator {
     /**
      * Converts an array where the ith digit corresponds to (1 / baseA)^(i + 1)
@@ -68,34 +70,36 @@ public class BaseTranslator {
         return outputArray;
 
 //        // convert to base 10
-//        double x = toBase10(digits, baseA);
-//
-//        // convert to base B
+//        BigDecimal x = toBase10(digits, baseA);
+////
+////        // convert to base B
 //        return fromBase10(x, baseB, precisionB);
 
     }
 
-    private static double toBase10(int[] digits, int base) {
-
-        double x = 0;
-        for (int i=0; i<digits.length; i++) {
-            x += digits[i] * Math.pow(base, -(i+1));
-        }
-        return x;
-    }
-
-    private static int[] fromBase10(double x, int base, int precision) {
-
-        int[] output = new int[precision];
-        double c;
-        for (int i=0; i<precision; i++) {
-
-            c = x * base;
-            output[i] = (int) c;
-            x = (x * base) - (int) c;
-        }
-        return output;
-    }
+//    private static BigDecimal toBase10(int[] digits, int base) {
+//
+//        BigDecimal x = new BigDecimal(0);
+//        for (int i=0; i<digits.length; i++) {
+//            x = new BigDecimal(digits[i]).multiply(
+//                    new BigDecimal(1).divide(
+//                            new BigDecimal(base).pow((i+1)))).add(x);
+//        }
+//        return x;
+//    }
+//
+//    private static int[] fromBase10(BigDecimal x, int base, int precision) {
+//
+//        int[] output = new int[precision];
+//        BigDecimal c;
+//        for (int i=0; i<precision; i++) {
+//
+//            c = x.multiply(new BigDecimal(base));
+//            output[i] = c.intValue();
+//            x = c.subtract(new BigDecimal(c.intValue()));
+//        }
+//        return output;
+//    }
 
 
 }

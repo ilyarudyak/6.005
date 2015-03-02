@@ -8,5 +8,19 @@ package calculator;
  * Token type.
  */
 enum Type {
-	// TODO define for problem 1
+
+    LEFTPAREN,	// (
+    RIGHTPAREN,	// )
+
+    NUMBER,		// 1, 2, 3, 4...
+
+    INCH,
+    POINT,      // 1 inch = 72 points
+
+    PLUS,		// +
+    MINUS,		// -
+    TIMES,		// *
+    DIVIDE,		// /
+    WHITESPACE,
+    EOF,
 }

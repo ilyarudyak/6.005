@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fe94e72-d85e-49c7-b12a-32d55d7fba0d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/markup/Gallileo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/markup/GallileoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/markup/HtmlLexer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/markup/LatexLexer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/calculator/LexerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/markup/MarkdownLexer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/markup/MarkdownLexerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/markup/ShuffleTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/markup/SyntaxErrorException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/regex/Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/markup/Token.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/markup/Type.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/calculator/Lexer.java" afterPath="$PROJECT_DIR$/src/calculator/Lexer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/calculator/MultiUnitCalculator.java" afterPath="$PROJECT_DIR$/src/calculator/MultiUnitCalculator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/calculator/Parser.java" afterPath="$PROJECT_DIR$/src/calculator/Parser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/calculator/Type.java" afterPath="$PROJECT_DIR$/src/calculator/Type.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pa2/pa2.iml" afterPath="$PROJECT_DIR$/../pa2/pa2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pa1/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../pa1/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pa2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../pa2/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pa3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,30 +27,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Lexer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Lexer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/calculator/Lexer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="970" max-vertical-offset="2329">
-              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.1685761" vertical-offset="0" max-vertical-offset="1241">
+              <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#Lexer#0" expanded="false" />
+                <element signature="method#Lexer#0;class#Lexer#0" expanded="false" />
+                <element signature="method#next#0;class#Lexer#0" expanded="false" />
                 <element signature="docComment;class#Token#0;class#Lexer#0" expanded="false" />
                 <element signature="class#Token#0;class#Lexer#0" expanded="false" />
-                <element signature="e#2743#2744#0" expanded="true" />
-                <element signature="e#2778#2779#0" expanded="true" />
-                <element signature="e#2813#2814#0" expanded="true" />
-                <element signature="e#2848#2849#0" expanded="true" />
-                <element signature="e#3244#3252#0" expanded="true" />
-                <element signature="e#3432#3459#0" expanded="true" />
+                <element signature="method#Token#0;class#Token#0;class#Lexer#0" expanded="false" />
+                <element signature="method#toString#0;class#Token#0;class#Lexer#0" expanded="false" />
+                <element signature="method#parse#0;class#Lexer#0" expanded="false" />
+                <element signature="method#main#0;class#Lexer#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LexerTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LexerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/calculator/LexerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7790507" vertical-offset="0" max-vertical-offset="663">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
               <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
               <folding />
             </state>
@@ -103,8 +83,8 @@
         <option value="$PROJECT_DIR$/src/regex/Test.java" />
         <option value="$PROJECT_DIR$/src/markup/HtmlLexer.java" />
         <option value="$PROJECT_DIR$/src/calculator/Type.java" />
-        <option value="$PROJECT_DIR$/src/calculator/Lexer.java" />
         <option value="$PROJECT_DIR$/src/calculator/LexerTest.java" />
+        <option value="$PROJECT_DIR$/src/calculator/Lexer.java" />
       </list>
     </option>
   </component>
@@ -543,7 +523,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="23" width="1272" height="731" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -563,7 +543,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3105691" sideWeight="0.49921754" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3105691" sideWeight="0.5007825" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3105691" sideWeight="0.5007825" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -727,29 +707,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/calculator/Lexer.java">
+    <entry file="file://$PROJECT_DIR$/src/calculator/LexerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="970" max-vertical-offset="2329">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Token#0;class#Lexer#0" expanded="false" />
-            <element signature="class#Token#0;class#Lexer#0" expanded="false" />
-            <element signature="e#2743#2744#0" expanded="true" />
-            <element signature="e#2778#2779#0" expanded="true" />
-            <element signature="e#2813#2814#0" expanded="true" />
-            <element signature="e#2848#2849#0" expanded="true" />
-            <element signature="e#3244#3252#0" expanded="true" />
-            <element signature="e#3432#3459#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/calculator/LexerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/calculator/Lexer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7790507" vertical-offset="0" max-vertical-offset="663">
-          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
-          <folding />
+        <state vertical-scroll-proportion="1.1685761" vertical-offset="0" max-vertical-offset="1241">
+          <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+          <folding>
+            <element signature="docComment;class#Lexer#0" expanded="false" />
+            <element signature="method#Lexer#0;class#Lexer#0" expanded="false" />
+            <element signature="method#next#0;class#Lexer#0" expanded="false" />
+            <element signature="docComment;class#Token#0;class#Lexer#0" expanded="false" />
+            <element signature="class#Token#0;class#Lexer#0" expanded="false" />
+            <element signature="method#Token#0;class#Token#0;class#Lexer#0" expanded="false" />
+            <element signature="method#toString#0;class#Token#0;class#Lexer#0" expanded="false" />
+            <element signature="method#parse#0;class#Lexer#0" expanded="false" />
+            <element signature="method#main#0;class#Lexer#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

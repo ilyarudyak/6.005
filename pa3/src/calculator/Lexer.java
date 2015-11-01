@@ -81,7 +81,6 @@ public class Lexer {
             // skip whitespace
             if (!value.contains(" ")) { break; }
 
-//        System.out.println("value='"+value+"' i="+i);
         }
 
         Token t = null;
@@ -150,8 +149,7 @@ public class Lexer {
         Lexer l = new Lexer(s);
 
         System.out.println(l.parse());
-//        System.out.println(l.next());
-//        System.out.println(l.next());
+
 
     }
 }
